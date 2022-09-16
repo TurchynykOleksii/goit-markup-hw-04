@@ -64,7 +64,8 @@ body {
 .decision {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url('../images/header_bg.jpg');
+  background: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/header_bg.jpg');
 }
 
 .decision__container {
