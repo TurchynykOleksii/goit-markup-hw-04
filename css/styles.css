@@ -62,10 +62,14 @@ body {
 }
 
 .decision {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   background: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/header_bg.jpg');
+  background-size: cover;
 }
 
 .decision__container {
@@ -131,8 +135,7 @@ body {
   color: var(--grey-color);
 }
 .benefits__thumb {
-  min-height: 125px;
-  padding: 25px 100px;
+  height: 120px;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -162,10 +165,10 @@ body {
   margin-bottom: 10px;
 }
 .team__item_subline {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 .team__social {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,6 +282,10 @@ body {
   font-weight: 500;
 }
 
+.header__icon {
+  fill: var(--grey-color);
+}
+
 .header__email,
 .header__phone {
   display: flex;
@@ -286,8 +293,17 @@ body {
   gap: 10px;
   color: var(--grey-color);
 }
+.header__email a,
+.header__phone a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 .header__email:hover,
-.header__phone:hover {
+.header__phone:hover,
+.header__email:hover svg,
+.header__phone:hover svg {
   fill: var(--accent-color);
 }
 
@@ -298,7 +314,7 @@ body {
   fill: var(--accent-color);
 }
 .header__logo,
-.footer__adress > a,
+.footer__logo,
 .header__navigation_list li a,
 .header__contacts a,
 .jobs__cards a,
@@ -417,6 +433,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+.jobs__card a:hover,
+.jobs__card a:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .jobs__filter {
   margin-bottom: 50px;
   display: flex;
@@ -466,6 +487,11 @@ body {
   font-weight: 700;
   color: var(--white-color);
   text-transform: uppercase;
+}
+.footer__adress {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
 }
 
 .footer__adress_item a:hover,
