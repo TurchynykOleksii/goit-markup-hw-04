@@ -30,8 +30,10 @@ body {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
 }
 
 /* index css */
@@ -39,8 +41,9 @@ body {
   padding: 94px 0;
 }
 .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
-  padding: 25px 0;
 }
 .header__container,
 .header__navigation,
@@ -51,7 +54,6 @@ body {
   gap: 50px;
 }
 .header__container {
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -60,6 +62,8 @@ body {
 }
 
 .decision {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-image: url('../images/header_bg.jpg');
 }
 
@@ -69,13 +73,15 @@ body {
   align-items: center;
 }
 .decision__headline {
+  max-width: 696px;
   margin-bottom: 30px;
   color: var(--white-color);
   font-size: 44px;
   font-weight: 900;
-  letter-spacing: 1.3;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
+  line-height: 1.3;
 }
 .decision_btn {
   padding: 10px 32px;
@@ -108,10 +114,7 @@ body {
   display: flex;
   gap: 30px;
 }
-.benefits__item {
-  display: flex;
-  flex-direction: column;
-}
+
 .benefits__item_headline {
   margin-bottom: 10px;
   font-size: 14px;
@@ -127,21 +130,23 @@ body {
   color: var(--grey-color);
 }
 .benefits__thumb {
+  min-height: 125px;
+  padding: 25px 100px;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--grey-color-btn);
 }
-.benefits__thumb img {
-  padding: 25px 100px;
-}
+
 .session__headline,
 .team__headline,
 .partners__headline {
   margin-bottom: 50px;
 }
-
+.session {
+  padding-top: 0;
+}
 .team {
   background-color: var(--grey-color-btn);
 }
@@ -152,11 +157,11 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .team__item_headline {
+  margin-top: 30px;
   margin-bottom: 10px;
-  padding-top: 30px;
 }
 .team__item_subline {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .team__social {
   padding-bottom: 30px;
@@ -215,6 +220,12 @@ body {
 .session__list {
   display: flex;
   gap: 30px;
+}
+
+.session__list_item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .partners__list {
@@ -295,6 +306,7 @@ body {
 }
 
 .header__contacts {
+  margin-left: auto;
   display: flex;
   gap: 50px;
 }
@@ -374,14 +386,12 @@ body {
 
 .jobs__headline,
 .jobs__subline {
-  padding-right: 24px;
-  padding-left: 24px;
   line-height: 1.1;
 }
 
 .jobs__headline {
   margin-bottom: 4px;
-  padding-top: 20px;
+
   font-size: 18px;
   font-weight: 700;
   color: var(--black-color);
@@ -389,7 +399,6 @@ body {
   letter-spacing: 0.06em;
 }
 .jobs__subline {
-  padding-bottom: 20px;
   color: var(--grey-color);
   letter-spacing: 0.03em;
   line-height: 1.8;
@@ -400,16 +409,31 @@ body {
   flex-wrap: wrap;
 }
 .jobs__card {
-  border: 1px solid #eeeeee;
+  max-width: 370px;
+  width: 100%;
+}
+.jobs__card a {
+  display: flex;
+  flex-direction: column;
 }
 .jobs__filter {
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   gap: 9px;
 }
 .jobs__img {
   border-bottom: 1px solid #ececec;
+}
+
+.jobs__container-text {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .footer {
@@ -425,7 +449,6 @@ body {
 
 .footer__adress_item a {
   color: var(--white-color);
-  line-height: 1.7;
 }
 
 .footer__adress_item-grey a {
